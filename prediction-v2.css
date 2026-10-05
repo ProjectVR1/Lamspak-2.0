@@ -1,0 +1,34 @@
+/* Dark-green 80% visual system for LAMSPAK Prediction V2.0 */
+:root{
+  --ink:#10261d;--muted:#5b6f65;--line:#b8d3c4;--paper:#ffffff;
+  --bg:#063b2c;--brand:#075d3f;--brand2:#0b7a53;--soft:#dff6e8;
+  --green:#0a704d;--amber:#9a6500;--red:#a52222;--yellow:#fff5c7;--blue:#215a78;
+  --shadow:0 18px 44px rgba(1,31,22,.24);--r:16px
+}
+html{background:#063b2c}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(37,122,83,.34),transparent 26%),
+    radial-gradient(circle at 86% 18%,rgba(72,150,106,.20),transparent 22%),
+    linear-gradient(145deg,#032e22 0%,#064632 48%,#0a563d 80%,#d9eee2 100%);
+  background-attachment:fixed;
+}
+.topbar{background:rgba(3,46,34,.96);border-color:rgba(206,239,220,.18);color:#f1fff6}
+.brand strong{color:#f3fff7}.brand span{color:#b9dfc9}.brandmark{background:linear-gradient(145deg,#24a36d,#0b5e43)}
+.topbar .btn{background:#f6fff9;border-color:#9bc5ac}.topbar .btn.primary{background:#12865c;border-color:#12865c}
+.hero{color:#effff5;padding-top:42px}.eyebrow{color:#9de5b9}.hero h1{color:#fff;max-width:920px}.badges span{background:rgba(237,255,244,.10);border-color:rgba(223,255,235,.25);color:#eafff2;backdrop-filter:blur(5px)}
+.score-card{background:rgba(250,255,252,.97);border-color:#95bda6;color:var(--ink)}
+.status-criteria{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:20px}
+.criteria-card{background:rgba(251,255,252,.97);border:1px solid #9fc5ae;border-radius:14px;padding:13px 15px;box-shadow:var(--shadow);display:grid;gap:4px}
+.criteria-card b{font-size:.84rem;letter-spacing:.05em}.criteria-card span{font-size:.77rem;color:#52665b}.criteria-card.unggul{border-top:5px solid #12734f}.criteria-card.accredited{border-top:5px solid #31708d}.criteria-card.fail{border-top:5px solid #a52222}
+.unggul-note{grid-column:1/-1;background:rgba(221,246,231,.97);border:1px solid #8fc4a5;border-radius:12px;padding:11px 14px;font-size:.79rem;color:#123f2c}
+.app{align-items:start}.sidebar{background:rgba(4,49,36,.96);border-color:rgba(207,240,219,.16);box-shadow:0 18px 42px rgba(0,20,14,.26)}
+.sidebar button:not(.btn){color:#caead7}.sidebar button:not(.btn):hover,.sidebar button.active{background:#d9f5e4;color:#064a35}.sidebar hr{border-color:rgba(211,240,222,.18)}.save{color:#a9d2ba}
+.panel,.criterion-group,.table-card,.report-section{border-color:#b5d0bf;box-shadow:0 16px 36px rgba(2,35,24,.17)}
+.analysis-first{border-top:6px solid #0d7a53}.analysis-actions,.prediction-next{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.auto-prediction{border-top:6px solid #0b7a53}.prediction-kpis{grid-template-columns:repeat(5,minmax(0,1fr))}.prediction-warning{margin:12px 0;padding:11px 13px;border-radius:10px;background:#edf9f1;border-left:5px solid #17734f;font-size:.8rem;color:#234e39}.prediction-empty{background:#f2fbf5}.prediction-next{margin-top:12px}
+.method-alert{display:none!important}
+footer{background:#032d21;color:#bce1ca;border-color:#1c5c43}.report-table th,.analysis-table th{background:#dcefe3}.track i,.mini-track i,.progress span{background:linear-gradient(90deg,#075d3f,#1b9868)}
+@media(max-width:850px){.status-criteria{grid-template-columns:1fr}.prediction-kpis{grid-template-columns:repeat(2,1fr)}.hero{padding-top:28px}}
+@media print{html,body{background:#fff!important}.status-criteria{display:none!important}}
